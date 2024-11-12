@@ -2,13 +2,18 @@
 
 set -e
 
-npm version patch
-
+# build
 npm run clean
-npm run build
+npx tsc
 
 cp README.md build
 cp package.json build
+
+# Ship source files too.
+cp -r src/* build/
+
+// publish
+npm version patch
 
 cd build
 npm publish

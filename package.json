@@ -8,19 +8,18 @@
 	"main": "index.js",
 	"scripts": {
 		"clean": "rm -rf build",
-		"build": "tsc",
 		"typecheck": "tsc --noEmit",
 		"test": "mocha -r tsx './src/**/*.test.ts' './src/**/*.test.tsx' --verbose",
-		"release": "./release.sh"
+		"release": "./release"
 	},
 	"keywords": [],
 	"author": "Chet Corcos <ccorcos@gmail.com>",
 	"license": "MIT",
 	"devDependencies": {
 		"@types/mocha": "whitecolor/mocha-types",
-		"@types/node": "^20.9.1",
-		"mocha": "^10.2.0",
-		"tsx": "^4.1.2",
-		"typescript": "^5.2.2"
+		"@types/node": "^22.9.0",
+		"mocha": "^10.8.2",
+		"tsx": "^4.19.2",
+		"typescript": "^5.6.3"
 	}
 }
